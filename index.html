@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cuidado del Carrito ADM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #222;
+    }
+    header {
+      background: #005baa;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 { margin: 0; }
+    .rules {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .rules h2 {
+      color: #005baa;
+      margin-top: 0;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 20px;
+      font-size: 16px;
+      background: #005baa;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0070d1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Reglas para Cuidar el Carrito ADM</h1>
+  </header>
+
+  <div class="rules">
+    <h2>🌐 Concepto del Carrito ADM</h2>
+    <p>
+      El Carrito ADM (Aula Digital Móvil) es un recurso que entrega el gobierno a las escuelas para mejorar el aprendizaje. 
+      Dentro del carro hay computadoras portátiles, un proyector, pizarra digital y otros equipos que nos ayudan a aprender con tecnología.
+    </p>
+    <p>
+      Este carro es muy valioso porque:
+    </p>
+    <ul>
+      <li>💻 Permite que todos los estudiantes tengan acceso a la tecnología.</li>
+      <li>📚 Facilita nuevas formas de enseñar y aprender.</li>
+      <li>🏫 Es un patrimonio de la escuela, no de una sola persona.</li>
+    </ul>
+    <p>
+      Por eso, cuidarlo es responsabilidad de todos. Si lo usamos bien, lo tendrán muchos cursos durante años; si se rompe por descuido, todos pierden esa oportunidad.
+    </p>
+
+    <h2>✅ Reglas para Cuidar el Carrito ADM</h2>
+    <ol>
+      <li>📌 <b>Uso institucional:</b> el carrito y las computadoras son solo para actividades escolares, no se pueden llevar a casa.</li>
+      <li>👨‍🏫 <b>Supervisión docente:</b> los alumnos solo usamos las notebooks cuando el docente lo autoriza y está presente.</li>
+      <li>🔒 <b>Cierre y resguardo:</b> siempre mantener el carrito cerrado con llave cuando no se use.</li>
+      <li>⚡ <b>Apagar los equipos:</b> antes de guardarlos en el carro, las notebooks deben apagarse correctamente.</li>
+      <li>🚫 <b>No instalar programas</b> sin permiso del docente o técnico.</li>
+      <li>🥤 <b>Evitar daños físicos:</b> no comer ni beber cerca de las computadoras; no golpearlas ni mover el carro bruscamente.</li>
+      <li>🔌 <b>Conexiones seguras:</b> no conectar pendrives o discos externos desconocidos para evitar virus.</li>
+      <li>🛡️ <b>Actualizar y proteger:</b> mantener antivirus y sistemas siempre al día.</li>
+      <li>📢 <b>Reportar incidentes:</b> si un equipo se daña, se pierde o es robado, avisar inmediatamente al docente o directivos.</li>
+      <li>🤝 <b>Responsabilidad compartida:</b> si alguien hace mal uso, se informará a tutores o directivos, y en caso de daño deberá hacerse responsable.</li>
+    </ol>
+  </div>
+
+  <!-- Botón Play/Pausa -->
+  <button id="btn" onclick="toggleMusic()">🎵 Reproducir música</button>
+
+  <!-- Audio oculto -->
+  <audio id="player" loop>
+    <source src="rap.mp3.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio en HTML5.
+  </audio>
+
+  <footer>
+    © 2025 - Guía de cuidado del Carrito ADM (Aula Digital Móvil)
+  </footer>
+
+  <script>
+    const player = document.getElementById("player");
+    const btn = document.getElementById("btn");
+
+    function toggleMusic() {
+      if (player.paused) {
+        player.play();
+        btn.textContent = "⏸ Pausar música";
+      } else {
+        player.pause();
+        btn.textContent = "🎵 Reproducir música";
+      }
+    }
+  </script>
+</body>
+</html>
